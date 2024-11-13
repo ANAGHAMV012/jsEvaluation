@@ -1,6 +1,12 @@
-// Question: Write a function safeParse(jsonString) that safely parses a JSON string and returns the object if valid or an error message if invalid.
-
 function safeParse(jsonString){
-
+    try{
+        return JSON.parse(jsonString)
+    }
+    catch (error){
+        return {error: "Invalid"}
+    }
 }
-console.log(safeParse())
+const valid ='{"name": "anagha", "age":30}'
+console.log(safeParse(valid))
+const invalid ='{name: "anagha", age:30}'
+console.log(safeParse(invalid))
