@@ -27,7 +27,7 @@ function isPalindrome(str) {
     str = str.toLowerCase()
     str = str.replace(/ /, "")
     str = str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"")
-    for (let i = 0; i < str.length / 2; i++) {
+    for (let i = 0; i < str.length; i++) {
         if (str[i] !== str[str.length - 1 - i]) {
             return 'It is not a palindrome';
         }

@@ -1,5 +1,5 @@
 function counter(){
-    let countervalue=0
+    let countervalue=1
     return{
         increment(){
             countervalue++

@@ -1,4 +1,4 @@
-function deepClone(obj) {
+function deepClone() {
     const original ={
         name: "anagha",
         details:{
